@@ -1,6 +1,6 @@
 ---
 name: AntiPoggitStaffs
-version: 1.0.0
+version: 1.0.0-beta
 main: NhanAZ\AntiPoggitStaffs\Main
 api: 4.0.0
 src-namespace-prefix: NhanAZ\AntiPoggitStaffs
