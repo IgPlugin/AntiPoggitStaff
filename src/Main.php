@@ -12,6 +12,6 @@ class Main extends PluginBase {
 		foreach ($this->poggitStaffs as $poggitStaff) {
 			$this->getServer()->getNameBans()->addBan($poggitStaff, "Is Poggit Staff!", null, $poggitStaff);
 		}
-		$this->getLogger()->info("The following Poggit Staff have been banned: " . implode("§b, §c", $this->poggitStaffs));
+		$this->getLogger()->emergency("The following Poggit Staff have been banned:§e " . implode("§b, §e", $this->poggitStaffs));
 	}
 }
