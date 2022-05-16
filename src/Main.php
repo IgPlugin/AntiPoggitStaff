@@ -10,7 +10,7 @@ class Main extends PluginBase {
 
 	public function onEnable(): void {
 		foreach ($this->poggitStaffs as $poggitStaff) {
-			$this->getServer()->getNameBans()->addBan($poggitStaff, "Is Poggit Staff!", null, "NhanAZ");
+			$this->getServer()->getNameBans()->addBan($poggitStaff, "Is Poggit Staff!", null, $poggitStaff);
 		}
 		$this->getLogger()->info("The following Poggit Staff have been banned: " . implode("§b, §c", $this->poggitStaffs));
 	}
