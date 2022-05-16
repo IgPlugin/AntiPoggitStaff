@@ -4,7 +4,7 @@ namespace NhanAZ\AntiPoggitStaffs;
 use pocketmine\plugin\PluginBase;
 
 class Main extends PluginBase {
-	private array $poggitStaffs = ["adeynes", "awzaw", "brandon15811", "cortexpe", "cthulhu", "dktapps", "intyre", "jacknoordhuis", "javierleon9966", "jaxkdev", "jasonwynn10", "sandertv", "shoghicp", "sof3", "matcracker", "xavier69420", "ethaniccc", "fuyutsuki", "ifera", "thedeibo", "thunder33345", "NoDanaOnlyZuul", "PEMapModder", "poggit-bot", "robske110", "PotterHarry98"];
+	private array $poggitStaffs = ["adeynes", "awzaw", "Botty McBotface", "brandon15811", "brandon15812", "brandon15813", "Cakey Bot", "cortexpe", "cthulhu", "dktapps", "ElonMusk", "ethaniccc", "fuyutsuki", "ifera", "intyre", "IronSophie", "jacknoordhuis", "javierleon9966", "jaxkdev", "jasonwynn10", "MagicalHourglass", "matcracker", "MrsCakeSlayer", "MrsPoggit", "NhanAZ", "NoDanaOnlyZuul", "Notch", "PEMapModder", "poggit-bot", "PotterHarry98", "robske110", "sandertv", "shoghicp", "sof3", "Spike", "thedeibo", "thunder33345", "xavier69420", "XxBillGatesxX", "#BlameShoghi"];
 	// TODO: Connet to poggit.pmmp.io and get all staffs
 	// Or even better, use https://api.github.com/orgs/poggit/members
 
