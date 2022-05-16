@@ -20,7 +20,7 @@ class Main extends PluginBase {
 	private function disableConflictingPlugins() {
 		foreach ($this->conflictingPlugins as $conflictingPlugin) {
 			if ($this->getServer()->getPluginManager()->getPlugin($conflictingPlugin) !== null) {
-				$this->getServer()->getPluginManager()->disablePlugin($this);
+				$this->getServer()->getPluginManager()->disablePlugin($this->getServer()->getPluginManager()->getPlugin($conflictingPlugin));
 				$this->getLogger()->emergency("§cThe plugin §e" . $conflictingPlugin . "§c is conflicting with this plugin. Disabled it!");
 			}
 		}
