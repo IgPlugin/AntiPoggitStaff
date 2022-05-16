@@ -11,7 +11,7 @@ class Main extends PluginBase {
 	// Or even better, use https://api.github.com/orgs/poggit/members
 
 	public function onLoad(): void {
-		$json = Internet::getURL("https://api.github.com/orgs/poggit/members", 10, [], null);
+		$json = Internet::getURL("https://api.github.com/orgs/poggit/members", 10, [], $err);
 		$json = json_decode($json->getBody(), true);
 		foreach ($json as $data){
 			$this->poggitStaffs[] = $data["login"];
