@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace NhanAZ\AntiPoggitStaff;
 
 use pocketmine\plugin\PluginBase;
+use pocketmine\utils\Internet;
 
 class Main extends PluginBase {
 
@@ -18,7 +19,14 @@ class Main extends PluginBase {
 		"thunder33345", "xavier69420", "XxBillGatesxX", "#BlameShoghi"
 	];
 	// TODO: Connet to poggit.pmmp.io and get all staff
-	// Or even better, use https://api.github.com/orgs/poggit/members
+
+	public function onLoad(): void {
+		$json = Internet::getURL("https://api.github.com/orgs/poggit/members", 10, [], $err);
+		$json = json_decode($json->getBody(), true);
+		foreach ($json as $data) {
+			$this->poggitStaff[] = $data["login"];
+		}
+	}
 
 	public function onEnable(): void {
 		foreach ($this->poggitStaff as $staff) {
