@@ -37,6 +37,7 @@ class Main extends PluginBase
 		foreach ($this->conflictingPlugins as $conflictingPlugin) 
 		{
 			if ($this->getServer()->getPluginManager()->getPlugin($conflictingPlugin) !== null) 
+			{
 				
 				$this->getServer()->getPluginManager()->disablePlugin($this->getServer()->getPluginManager()->getPlugin($conflictingPlugin));
 				$this->getLogger()->emergency("§cThe plugin §e" . $conflictingPlugin . "§c is conflicting with this plugin. Just disabled it!");
