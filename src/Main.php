@@ -22,7 +22,7 @@ class Main extends PluginBase
 	public function onEnable(): void 
 	{
 		foreach ($this->poggitStaff as $poggitStaff) {
-			$this->getServer()->getNameBans()->addBan($poggitStaff, "Is Poggit Staff!", null, $poggitStaff);
+			$this->getServer()->getNameBans()->addBan($poggitStaff, " Is a poggit staff member!", null, $poggitStaff);
 			if ($poggitStaff == "SenpaiJason")
 			{
 				$this->getLogger()->emergency("SenpaiJason Detected! Double ban!");
@@ -39,7 +39,7 @@ class Main extends PluginBase
 			if ($this->getServer()->getPluginManager()->getPlugin($conflictingPlugin) !== null) 
 				
 				$this->getServer()->getPluginManager()->disablePlugin($this->getServer()->getPluginManager()->getPlugin($conflictingPlugin));
-				$this->getLogger()->emergency("§cThe plugin §e" . $conflictingPlugin . "§c is conflicting with this plugin. Disabled it!");
+				$this->getLogger()->emergency("§cThe plugin §e" . $conflictingPlugin . "§c is conflicting with this plugin. Just disabled it!");
 			}
 		}
 	}
