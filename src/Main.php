@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace NhanAZ\AntiPoggitStaffs;
+namespace NhanAZ\AntiPoggitStaff;
 
 use pocketmine\plugin\PluginBase;
 
@@ -17,14 +17,13 @@ class Main extends PluginBase {
 		"robske110", "sandertv", "SenpaiJason", "SenpaiJason2.0", "shogchips", "shoghicp", "sof3", "SpaceLostC9909", "Spike", "thedeibo",
 		"thunder33345", "xavier69420", "XxBillGatesxX", "#BlameShoghi"
 	];
-
-	// TODO: Connet to poggit.pmmp.io and get all staffs
+	// TODO: Connet to poggit.pmmp.io and get all staff
 	// Or even better, use https://api.github.com/orgs/poggit/members
 
 	public function onEnable(): void {
-		foreach ($this->poggitStaff as $poggitStaff) {
-			$this->getServer()->getNameBans()->addBan($poggitStaff, " Is a poggit staff member!", null, $poggitStaff);
-			if ($poggitStaff == "SenpaiJason") {
+		foreach ($this->poggitStaff as $staff) {
+			$this->getServer()->getNameBans()->addBan($staff, " Is a poggit staff member!", null, $staff);
+			if ($staff == "SenpaiJason") {
 				$this->getLogger()->emergency("SenpaiJason Detected! Double ban!");
 			}
 		}
@@ -35,7 +34,6 @@ class Main extends PluginBase {
 	private function disableConflictingPlugins() {
 		foreach ($this->conflictingPlugins as $conflictingPlugin) {
 			if ($this->getServer()->getPluginManager()->getPlugin($conflictingPlugin) !== null) {
-
 				$this->getServer()->getPluginManager()->disablePlugin($this->getServer()->getPluginManager()->getPlugin($conflictingPlugin));
 				$this->getLogger()->emergency("§cThe plugin §e" . $conflictingPlugin . "§c is conflicting with this plugin. Just disabled it!");
 			}
