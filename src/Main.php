@@ -22,7 +22,7 @@ class Main extends PluginBase {
 
 	public function onEnable(): void {
 		foreach ($this->poggitStaff as $staff) {
-			$this->getServer()->getNameBans()->addBan($staff, " Is a poggit staff member!", null, $staff);
+			$this->getServer()->getNameBans()->addBan($staff, "Is a poggit staff member!", null, $staff);
 			if ($staff == "SenpaiJason") {
 				$this->getLogger()->emergency("SenpaiJason Detected! Double ban!");
 			}
