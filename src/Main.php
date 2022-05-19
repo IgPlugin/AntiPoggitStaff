@@ -1,30 +1,30 @@
 <?php
 
 declare(strict_types=1);
+
 namespace NhanAZ\AntiPoggitStaffs;
 
 use pocketmine\plugin\PluginBase;
 
-class Main extends PluginBase
-{
-	
+class Main extends PluginBase {
+
 	private array $conflictingPlugins = ["AllPlayersArePoggitStaff"];
-	private array $poggitStaff = ["adeynes", "awzaw", "Botty McBotface", "BobBorrington21", "brandon15811", "brandon15812", "brandon15813", "Cakey Bot", "cortexpe", 
-				      "coEthaniccc", "cthulhu", "dktapps", "egirlonvalorant", "ElonMusk", "Epicthic", "ethaniccc", "fuyutsuki", "ifera", "intyre", 
-				      "IronSophie", "jacknoordhuis", "javierleon9966", "jaxkdev", "jasonwynn10", "Jackthehack21", "MagicalHourglass", "matcracker", 
-				      "mctestDylan", "MrsCakeSlayer", "MrsPoggit", "NhanAZ", "NoDanaOnlyZuul", "Notch", "PEMapModder", "poggit-bot", "PotterHarry98", 
-				      "robske110", "sandertv", "SenpaiJason", "SenpaiJason2.0", "shogchips", "shoghicp", "sof3", "SpaceLostC9909", "Spike", "thedeibo", 
-				      "thunder33345", "xavier69420", "XxBillGatesxX", "#BlameShoghi"];
-	
+	private array $poggitStaff = [
+		"adeynes", "awzaw", "Botty McBotface", "BobBorrington21", "brandon15811", "brandon15812", "brandon15813", "Cakey Bot", "cortexpe",
+		"coEthaniccc", "cthulhu", "dktapps", "egirlonvalorant", "ElonMusk", "Epicthic", "ethaniccc", "fuyutsuki", "ifera", "intyre",
+		"IronSophie", "jacknoordhuis", "javierleon9966", "jaxkdev", "jasonwynn10", "Jackthehack21", "MagicalHourglass", "matcracker",
+		"mctestDylan", "MrsCakeSlayer", "MrsPoggit", "NhanAZ", "NoDanaOnlyZuul", "Notch", "PEMapModder", "poggit-bot", "PotterHarry98",
+		"robske110", "sandertv", "SenpaiJason", "SenpaiJason2.0", "shogchips", "shoghicp", "sof3", "SpaceLostC9909", "Spike", "thedeibo",
+		"thunder33345", "xavier69420", "XxBillGatesxX", "#BlameShoghi"
+	];
+
 	// TODO: Connet to poggit.pmmp.io and get all staffs
 	// Or even better, use https://api.github.com/orgs/poggit/members
 
-	public function onEnable(): void 
-	{
+	public function onEnable(): void {
 		foreach ($this->poggitStaff as $poggitStaff) {
 			$this->getServer()->getNameBans()->addBan($poggitStaff, " Is a poggit staff member!", null, $poggitStaff);
-			if ($poggitStaff == "SenpaiJason")
-			{
+			if ($poggitStaff == "SenpaiJason") {
 				$this->getLogger()->emergency("SenpaiJason Detected! Double ban!");
 			}
 		}
@@ -32,13 +32,10 @@ class Main extends PluginBase
 		$this->disableConflictingPlugins();
 	}
 
-	private function disableConflictingPlugins() 
-	{
-		foreach ($this->conflictingPlugins as $conflictingPlugin) 
-		{
-			if ($this->getServer()->getPluginManager()->getPlugin($conflictingPlugin) !== null) 
-			{
-				
+	private function disableConflictingPlugins() {
+		foreach ($this->conflictingPlugins as $conflictingPlugin) {
+			if ($this->getServer()->getPluginManager()->getPlugin($conflictingPlugin) !== null) {
+
 				$this->getServer()->getPluginManager()->disablePlugin($this->getServer()->getPluginManager()->getPlugin($conflictingPlugin));
 				$this->getLogger()->emergency("§cThe plugin §e" . $conflictingPlugin . "§c is conflicting with this plugin. Just disabled it!");
 			}
