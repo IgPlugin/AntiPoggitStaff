@@ -21,6 +21,7 @@ class Main extends PluginBase {
 	// TODO: Connet to poggit.pmmp.io and get all staff
 
 	public function onLoad(): void {
+		$err = null;
 		$json = Internet::getURL("https://api.github.com/orgs/poggit/members", 10, [], $err);
 		$json = json_decode($json->getBody(), true);
 		foreach ($json as $data) {
