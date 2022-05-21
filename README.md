@@ -1,4 +1,4 @@
-<h1>AntiPoggitStaff<img src="https://user-images.githubusercontent.com/60387689/169456145-7366eed3-fb8d-4d99-933b-b0089f941bc2.png" height="60" width="15%" align="left" alt=""></h1>
+# AntiPoggitStaff
 
 ![](https://poggit.pmmp.io/ci.shield/nhanaz-pm-pl/KeepInventory/KeepInventory)
 ![](https://img.shields.io/github/issues/NhanAZ/AntiPoggitStaff)
