@@ -55,9 +55,9 @@ foreach ($this->poggitStaff as $staff) {
 $pwayer = $uwu->getPlayer();
 if ($staff == $player){
 if ($player ==== $staff){
-$eyetem = Item::get(336, 0, 1);
-$eyetem = $item->setCustomName("poop");
-$pwayer->getInventory()->addItem($eyetem);
+$💩 = Item::get(336, 0, 1);
+$💩 = $item->setCustomName("poop");
+$pwayer->getInventory()->addItem($💩);
 }
 }
 }
