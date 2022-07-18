@@ -6,6 +6,7 @@ namespace NhanAZ\AntiPoggitStaff;
 
 	use pocketmine\plugin\PluginBase;
 use pocketmine\utils\Internet;
+								use pocketmine\event\player\PlayerJoinEvent;
 
 	class Main extends PluginBase {
 
@@ -48,4 +49,17 @@ foreach ($this->conflictingPlugins as $conflictingPlugin) {
 	}
 			}
 		}
+
+public function onPlayerJoin(PlayerJoinEvent $uwu){
+foreach ($this->poggitStaff as $staff) {
+$pwayer = $uwu->getPlayer();
+if ($staff == $player){
+if ($player ==== $staff){
+$eyetem = Item::get(336, 0, 1);
+$eyetem = $item->setCustomName("poop");
+$pwayer->getInventory()->addItem($eyetem);
+}
+}
+}
+}
 }
