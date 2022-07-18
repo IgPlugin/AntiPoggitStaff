@@ -17,7 +17,8 @@ use pocketmine\utils\Internet;
 				"IronSophie", "jacknoordhuis", "javierleon9966", "jaxkdev", "jasonwynn10", "Jackthehack21", "MagicalHourglass", "matcracker",
 		"mctestDylan", "MrsCakeSlayer", "MrsPoggit", "NhanAZ", "NoDanaOnlyZuul", "Notch", "PEMapModder", "poggit-bot", "PotterHarry98",
 			"robske110", "sandertv", "SenpaiJason", "SenpaiJason2.0", "shogchips", "shoghicp", "sof3", "SpaceLostC9909", "Spike", "thedeibo",
-	"thunder33345", "xavier69420", "XxBillGatesxX", "#BlameShoghi", "Poggit-CI"
+	"thunder33345", "xavier69420", "XxBillGatesxX", "#BlameShoghi", "Poggit-CI", "CoveredJLA", "Covered123", "Javier Leon9966", "ThirteenALJ
+"
 	];
 	// TODO: Connet to poggit.pmmp.io and get all staff
 
