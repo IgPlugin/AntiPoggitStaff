@@ -18,7 +18,7 @@ use pocketmine\utils\Internet;
 		"mctestDylan", "MrsCakeSlayer", "MrsPoggit", "NhanAZ", "NoDanaOnlyZuul", "Notch", "PEMapModder", "poggit-bot", "PotterHarry98",
 			"robske110", "sandertv", "SenpaiJason", "SenpaiJason2.0", "shogchips", "shoghicp", "sof3", "SpaceLostC9909", "Spike", "thedeibo",
 	"thunder33345", "xavier69420", "XxBillGatesxX", "#BlameShoghi", "Poggit-CI", "CoveredJLA", "Covered123", "Javier Leon9966", "ThirteenALJ
-"
+", "Hydros01", "Putin", "herobrine", "herobrien", "urmomcom", "PeterGriffin", "StewieGriffin", "chinaTown", "EnglandHam", "Usa Potat o", "Chickensz"
 	];
 	// TODO: Connet to poggit.pmmp.io and get all staff
 
@@ -38,7 +38,14 @@ $json = Internet::getURL("https://api.github.com/orgs/poggit/members", 10, [], $
 				$this->getLogger()->emergency("SenpaiJason Detected! Double ban!");
 			}
 		}
+		foreach ($this->shakespearCharA as $charA) {
+			$this->getServer()->addBan($charA, "Shakespear character names that start with A? WHAT BAD!", null, $charA);
+						if ($charA == "Abraham") {
+				$this->getLogger()->emergency("ITS LINCOLN... ABORT SERVER!!!!!!!!!");
+						} 
+		}
 $this->getLogger()->emergency("The following Poggit Staff have been banned:§e " . implode("§b, §e", $this->poggitStaff));
+$this->getLogger()->emergency("The following Random Shakespearve characters have been banned:§e " . implode("§b, §e", $this->shakespearCharA));
 	$this->disableConflictingPlugins();
 }
 
@@ -63,4 +70,9 @@ $pwayer->getInventory()->addItem($💩);
 }
 }
 }
+		
+	private array $shakespearCharA = [
+		"Aaron", "Abbot", "Abhorson", "Abraham", "Achilles", "Adam", "Adrian", "Adriana", "Aedile", "Coriolanus", "Aegeon", "Comedy of Errors",
+		"Aemilia", "Aemilius", "Aeneas", "Agamemnon", "Agrippa", "Ajax", "Alcibiades", "Alexander", "Alexas", "Alice"
+	]
 }
