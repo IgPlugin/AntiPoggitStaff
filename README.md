@@ -4,3 +4,10 @@
 Use this plugin to get revenge on them by banning them upon server start!**
 
 <img src="https://raw.githubusercontent.com/xShamir/AntiPoggitStaff/master/Ban-Hammer.gif" autoplay="true"/>
+
+# 🦍 Zoo
+
+<figure>
+  <img src="./Zoo/jokershoghi.png" width="96px" height="96px">
+  <figcaption>Joker Shoghi</figcaption>
+</figure>
