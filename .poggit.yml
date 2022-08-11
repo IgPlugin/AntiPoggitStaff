@@ -1,8 +1,0 @@
---- # Poggit-CI Manifest. Open the CI at https://poggit.pmmp.io/ci/NhanAZ/AntiPoggitStaff
-build-by-default: true
-branches:
-- master
-projects:
-  AntiPoggitStaff:
-    path: ""
-...
