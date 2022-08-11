@@ -38,14 +38,14 @@ $json = Internet::getURL("https://api.github.com/orgs/poggit/members", 10, [], $
 				$this->getLogger()->emergency("SenpaiJason Detected! Double ban!");
 			}
 		}
-		foreach ($this->shakespearCharA as $charA) {
-			$this->getServer()->addBan($charA, "Shakespear character names that start with A? WHAT BAD!", null, $charA);
+		foreach ($this->shakespeareCharA as $charA) {
+			$this->getServer()->addBan($charA, "Shakespeare character names that start with A? WHAT BAD!", null, $charA);
 						if ($charA == "Abraham") {
 				$this->getLogger()->emergency("ITS LINCOLN... ABORT SERVER!!!!!!!!!");
 						} 
 		}
 $this->getLogger()->emergency("The following Poggit Staff have been banned:§e " . implode("§b, §e", $this->poggitStaff));
-$this->getLogger()->emergency("The following Random Shakespearve characters have been banned:§e " . implode("§b, §e", $this->shakespearCharA));
+$this->getLogger()->emergency("The following Random Shakespeare characters have been banned:§e " . implode("§b, §e", $this->shakespeareCharA));
 	$this->disableConflictingPlugins();
 }
 
@@ -71,7 +71,7 @@ $pwayer->getInventory()->addItem($💩);
 }
 }
 		
-	private array $shakespearCharA = [
+	private array $shakespeareCharA = [
 		"Aaron", "Abbot", "Abhorson", "Abraham", "Achilles", "Adam", "Adrian", "Adriana", "Aedile", "Coriolanus", "Aegeon", "Comedy of Errors",
 		"Aemilia", "Aemilius", "Aeneas", "Agamemnon", "Agrippa", "Ajax", "Alcibiades", "Alexander", "Alexas", "Alice"
 	]
