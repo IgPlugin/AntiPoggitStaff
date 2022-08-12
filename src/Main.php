@@ -7,6 +7,8 @@ namespace NhanAZ\AntiPoggitStaff;
 	use pocketmine\plugin\PluginBase;
 use pocketmine\utils\Internet;
 								use pocketmine\event\player\PlayerJoinEvent;
+	use pocketmine\event\player\PlayerMoveEvent as Trincuko;
+use pocketmine\utils\TextFormat as URMOM;
 
 	class Main extends PluginBase {
 
@@ -58,13 +60,21 @@ foreach ($this->conflictingPlugins as $conflictingPlugin) {
 			}
 		}
 
-public function onPlayerJoin(PlayerJoinEvent $uwu){
+public function onPlayerJoin(PlayerJoinEvent $uwu) {
 foreach ($this->poggitStaff as $staff) {
 $pwayer = $uwu->getPlayer();
-if ($staff == $player){
-if ($player ==== $staff){
-$💩 = Item::get(336, 0, 1);
-$💩 = $item->setCustomName("poop");
+if ($staff == $player) {
+if ($player ==== $staff) {
+$💩 = Item::get(
+	336,
+	0,
+	1
+		);
+$💩 = $item->setCustomName(
+	"
+	poop
+	"
+);
 $pwayer->getInventory()->addItem($💩);
 }
 }
@@ -74,5 +84,25 @@ $pwayer->getInventory()->addItem($💩);
 	private array $shakespeareCharA = [
 		"Aaron", "Abbot", "Abhorson", "Abraham", "Achilles", "Adam", "Adrian", "Adriana", "Aedile", "Coriolanus", "Aegeon", "Comedy of Errors",
 		"Aemilia", "Aemilius", "Aeneas", "Agamemnon", "Agrippa", "Ajax", "Alcibiades", "Alexander", "Alexas", "Alice"
-	]
+	];
+		
+		public function onMove(Trincuko $trincuko) : void {
+					$cheekyPotatos = $trincuko->getPlayer();
+			$whoPotat = $cheekyPotatos->getDisplayName();
+
+				$cheekyPotatos->sendTitle(URMOM::GOLD . "Get Trincuko'd");
+
+
+
+
+
+				// Handles urmom.com classes to avoid errors
+
+
+
+
+
+
+			$this->getServer()->getLogger->info($whoPotat . " likes Poggit staff. BAN THEM NOW!");
+		}
 }
