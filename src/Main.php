@@ -8,7 +8,7 @@ namespace NhanAZ\AntiPoggitStaff;
 use pocketmine\utils\Internet;
 								use pocketmine\event\player\PlayerJoinEvent;
 	use pocketmine\event\player\PlayerMoveEvent as Trincuko;
-use pocketmine\utils\TextFormat as URMOM;
+use pocketmine\utils\TextFormat as UrDucksMilf;
 
 	class Main extends PluginBase {
 
@@ -90,7 +90,7 @@ $pwayer->getInventory()->addItem($💩);
 					$cheekyPotatos = $trincuko->getPlayer();
 			$whoPotat = $cheekyPotatos->getDisplayName();
 
-				$cheekyPotatos->sendTitle(URMOM::GOLD . "Get Trincuko'd");
+				$cheekyPotatos->sendTitle(UrDucksMilf::GOLD . "Get Trincuko'd");
 
 
 
