@@ -14,13 +14,13 @@ use pocketmine\utils\TextFormat as UrDucksMilf;
 
 		private array $conflictingPlugins = ["AllPlayersArePoggitStaff"];
 	private array $poggitStaff = [
-		"adeynes", "awzaw", "Botty McBotface", "BobBorrington21", "brandon15811", "brandon15812", "brandon15813", "Cakey Bot",  "CelticTrinculo", "cortexpe",
+		"adeynes", "awzaw", "Botty McBotface", "BobBorrington21", "brandon", "brandon15811", "brandon15812", "brandon15813", "Cakey Bot",  "CelticTrinculo", "cortexpe",
 			"coEthaniccc", "cthulhu", "dktapps", "egirlonvalorant", "ElonMusk", "Epicthic", "ethaniccc", "fuyutsuki", "ifera", "intyre",
 				"IronSophie", "jacknoordhuis", "javierleon9966", "jaxkdev", "jasonwynn10", "Jackthehack21", "MagicalHourglass", "matcracker",
 		"mctestDylan", "MrsCakeSlayer", "MrsPoggit", "NhanAZ", "NoDanaOnlyZuul", "Notch", "PEMapModder", "poggit-bot", "PotterHarry98",
 			"robske110", "sandertv", "SenpaiJason", "SenpaiJason2.0", "shogchips", "shoghicp", "sof3", "SpaceLostC9909", "Spike", "thedeibo",
 	"thunder33345", "xavier69420", "XxBillGatesxX", "#BlameShoghi", "Poggit-CI", "CoveredJLA", "Covered123", "Javier Leon9966", "ThirteenALJ
-", "Hydros01", "Putin", "herobrine", "herobrien", "urmomcom", "PeterGriffin", "StewieGriffin", "chinaTown", "EnglandHam", "Usa Potat o", "Chickensz"
+", "Hydros01", "Putin", "herobrine", "herobrien", "urmomcom", "PeterGriffin", "StewieGriffin", "chinaTown", "EnglandHam", "Usa Potat o", "Chickensz", "sekjun", "williamtdr"
 	];
 	// TODO: Connet to poggit.pmmp.io and get all staff
 
