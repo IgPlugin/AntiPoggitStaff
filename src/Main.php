@@ -12,7 +12,9 @@ use pocketmine\utils\TextFormat as UrDucksMilf;
 
 	class Main extends PluginBase {
 
-		private array $conflictingPlugins = ["AllPlayersArePoggitStaff"];
+		private array $conflictingPlugins = ["AllPlayersArePoggitStaff"]; // i hate this plugin: https://github.com/BeeAZ-pm-pl/AllPlayersArePoggitStaff
+			
+
 	private array $poggitStaff = [
 		"adeynes", "awzaw", "Botty McBotface", "BobBorrington21", "brandon", "brandon15811", "brandon15812", "brandon15813", "Cakey Bot",  "CelticTrinculo", "cortexpe",
 			"coEthaniccc", "cthulhu", "dktapps", "egirlonvalorant", "ElonMusk", "Epicthic", "ethaniccc", "fuyutsuki", "ifera", "intyre",
