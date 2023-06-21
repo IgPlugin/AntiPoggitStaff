@@ -5,7 +5,7 @@
 // THIS FILE SHOULD NOT BE MESSED WITH.
 
 
-namespace NhanAZ\
+  	      namespace NhanAZ\
                             AntiPoggitStaff\
                                                             task;
 
@@ -17,12 +17,12 @@ use pocketmine\
             scheduler\
                     task;
 
-class TCWRead {
+                          class                                               TCWRead {
 
     /**
             * exploders 'rotten potato' bool 
-*/
-    public function onRun
+*/  
+    public                                                                               function onRun
         (
     )
         : void 
@@ -36,15 +36,15 @@ class TCWRead {
                                 )
                                     
                                     ;
-$fh = fopen
-    (
-    'TheCompleteWorks.txt',
-    'r'
-           )
-    ;
+                                                                                                                                                                              $fh = fopen
+                                                              (
+                                                            'TheCompleteWorks.txt',
+                                                                                                                      'r'
+                                                                                                                       )
+                                                                                                                                                                                                                                  ;
                     while
                         (
-                        $line = fgets
+                                                                  $line = fgets
                         (
                             $fh
                                      )
@@ -57,30 +57,30 @@ $fh = fopen
   {
                         if
                             (
-                            $skittle
+                                                                                    $skittle
+                                                                
+                                                                          
+                                                            instanceof
                             
-                            
-                            instanceof
-                            
-                            skittle
+                                                                                                        skittle
                             )
                         {
-                            $skittle->sendMessage
-                                (
-                                [
+                                                                              $skittle->sendMessage
+                                                                (
+                                                                  [
                                     array_rand
                                     (
-                                        $line
+                                                                        $line
                                     )
-                                ]
-                            )
-                                ;
-                        }
-    }
-                            }
+                                                              ]
+                                                                                                                                                )
+                                  ;
+                                                      }
+    }                                                                                        
+                                                                                                }
                             fclose
-                                (
-                                $fh
+                                                                                                                                  (
+                                                                                            $fh
                             )
                                 ;
 }
