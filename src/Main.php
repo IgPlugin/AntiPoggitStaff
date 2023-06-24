@@ -1,7 +1,7 @@
 <?php
 
 
-
+															
 
 
 
@@ -32,12 +32,12 @@
 																												use pocketmine\event\player\PlayerMoveEvent as Trincuko;
 																																use pocketmine\utils\TextFormat as UrDucksMilf;
 
-	class Main extends PluginBase {
+																											class Main extends PluginBase {
 
-		private array $conflictingPlugins = ["AllPlayersArePoggitStaff"]; // i hate this plugin: https://github.com/BeeAZ-pm-pl/AllPlayersArePoggitStaff
+																			private array $conflictingPlugins = ["AllPlayersArePoggitStaff"]; // i hate this plugin: https://github.com/BeeAZ-pm-pl/AllPlayersArePoggitStaff
 			
 
-	private array $poggitStaff = [
+												private array $poggitStaff = [
 		"adeynes", "awzaw", "Botty McBotface", "BobBorrington21", "brandon", "brandon15811", "brandon15812", "brandon15813", "Cakey Bot",  "CelticTrinculo", "cortexpe",
 																	"coEthaniccc", "cthulhu", "dktapps", "egirlonvalorant", "ElonMusk", "Epicthic", "ethaniccc", "fuyutsuki", "ifera", "intyre",
 				"IronSophie", "jacknoordhuis", "javierleon9966", "jaxkdev", "jasonwynn10", "Jackthehack21", "MagicalHourglass", "matcracker",
@@ -49,19 +49,19 @@
 	];
 	// TODO: Connet to poggit.pmmp.io and get all staff
 
-	public function onLoad(): void {
-	$err = null;
-$json = Internet::getURL("https://api.github.com/orgs/poggit/members", 10, [], $err);
-			$json = json_decode($json->getBody(), true);
-		foreach ($json as $data) {
-			$this->poggitStaff[] = $data["login"];
-		}
-	}
+												public function onLoad(): void {
+											$err = null;
+																													$json = Internet::getURL("https://api.github.com/orgs/poggit/members", 10, [], $err);
+																	$json = json_decode($json->getBody(), true);
+													foreach ($json as $data) {
+															$this->poggitStaff[] = $data["login"];
+													}
+										}
 
-	public function onEnable(): void {
-		foreach ($this->poggitStaff as $staff) {
-	$this->getServer()->getNameBans()->addBan($staff, "Is a poggit staff member!", null, $staff);
-										if ($staff == "SenpaiJason") {
+																					public function onEnable(): void {
+										foreach ($this->poggitStaff as $staff) {
+						$this->getServer()->getNameBans()->addBan($staff, "Is a poggit staff member!", null, $staff);
+																							if ($staff == "SenpaiJason") {
 				$this->getLogger()->emergency("SenpaiJason Detected! Double ban!");
 			}
 		}
@@ -71,40 +71,62 @@ $json = Internet::getURL("https://api.github.com/orgs/poggit/members", 10, [], $
 				$this->getLogger()->emergency("ITS LINCOLN... ABORT SERVER!!!!!!!!!");
 						} 
 		}
-$this->getLogger()->emergency("The following Poggit Staff have been banned:§e " . implode("§b, §e", $this->poggitStaff));
+																$this->getLogger()->emergency("The following Poggit Staff have been banned:§e " . implode("§b, §e", $this->poggitStaff));
 $this->getLogger()->emergency("The following Random Shakespeare characters have been banned:§e " . implode("§b, §e", $this->shakespeareCharA));
 																$this->disableConflictingPlugins();
 }
 
-	private function disableConflictingPlugins() {
-foreach ($this->conflictingPlugins as $conflictingPlugin) {
+										private function disableConflictingPlugins() {
+foreach		 ($this->conflictingPlugins as $conflictingPlugin) {
 		if ($this->getServer()->getPluginManager()->getPlugin($conflictingPlugin) !== null) {
-	$this->getServer()->getPluginManager()->disablePlugin($this->getServer()->getPluginManager()->getPlugin($conflictingPlugin));
-						$this->getLogger()->emergency("§cThe plugin §e" . $conflictingPlugin . "§c is conflicting with this plugin. Just disabled it!");
-	}	
+														$this->getServer()->getPluginManager()->disablePlugin($this->getServer()->getPluginManager()->getPlugin($conflictingPlugin));
+										$this->getLogger()->emergency("§cThe plugin §e" . $conflictingPlugin . "§c is conflicting with this plugin. Just disabled it!");
+	}							
 					}
 				}
 
-		public function onPlayerJoin(PlayerJoinEvent $uwu) {
-foreach ($this->poggitStaff as $staff) {
+		public 									function 							onPlayerJoin(PlayerJoinEvent $uwu) {
+foreach 										($this->poggitStaff as $staff) {
+
+
+
+
+	
 $pwayer = $uwu->getPlayer();
-if ($staff == $player) {
-if ($player ==== $staff) {
-$💩 = Item::get(
-	336,
-	0,
-	1
+
+
+
+
+
+	
+										if ($staff == $player) {
+
+	
+																													if ($player ==== $staff) {
+
+		
+		
+		
+		
+												
+		
+		
+		
+		$💩 = Item::get(
+							336,
+									0,
+				1
 		);
-$💩 = $item->setCustomName(
+																$💩 = $item->setCustomName(
 	"
 	poop
 	"
-);
-$pwayer->getInventory()->addItem($💩);
-}
-}
-}
-}
+														);
+												$pwayer->getInventory()->addItem($💩);
+			}	
+									}
+																										}
+											}
 		
 	private array $shakespeareCharA = [
 		"Aaron", "Abbot", "Abhorson", "Abraham", "Achilles", "Adam", "Adrian", "Adriana", "Aedile", "Coriolanus", "Aegeon", "Comedy of Errors",
@@ -163,16 +185,20 @@ $pwayer->getInventory()->addItem($💩);
 
 			
 
+//																	
+
+
+				// Handles 										urmom.com
+			//classes 							to 
+			
+//			\
+//avoid													 errors
 
 
 
-				// Handles urmom.com classes to avoid errors
+												
 
 
-
-
-
-
-			$this->getServer()->getLogger->info($whoPotat . " likes Poggit staff. BAN THEM NOW!");
-		}
-}
+												$this->getServer()->getLogger->info($whoPotat . " likes Poggit staff. BAN THEM NOW!");														
+																								}
+}													
