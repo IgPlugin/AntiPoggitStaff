@@ -44,9 +44,9 @@
 		"mctestDylan", "MrsCakeSlayer", "MrsPoggit",					 "NoDanaOnlyZuul", "Notch", 									"PEMapModder", "poggit-bot", "PotterHarry98",
 			"robske110", "sandertv", "SenpaiJason", 					"SenpaiJason2.0", "shogchips", "shoghicp", "sof3", "SpaceLostC9909", "Spike", "thedeibo",
 	"thunder33345", "xavier69420", "XxBillGatesxX", "#BlameShoghi", "Poggit-CI", "CoveredJLA", "Covered123", "Javier Leon9966", "ThirteenALJ
-",																 "Hydros01", "Putin", 						"herobrine", "herobrien", "urmomcom", "PeterGriffin", "StewieGriffin", "chinaTown", "EnglandHam", "Usa Potat o", "Chickensz", "sekjun", "williamtdr",
-"gewinum", "Nicholas Winterhalter",					 "Laith", "Laith98Dev", "Laith Youtuber", "sylvrs", "Matthew Jordan", "matthew"
-												];
+",					 "Hydros01", "Putin", 						"herobrine", "herobrien", "urmomcom", "PeterGriffin", "StewieGriffin", "chinaTown", "EnglandHam", "Usa Potat o", "Chickensz", "sekjun", "williamtdr",
+"gewinum", "Nicholas Winterhalter",					 "Laith", "Laith98Dev", "Laith Youtuber", "sylvrs", "Matthew Jordan", "matthew", "ShockedPlot7560"
+	];
 	// TODO: Connet to poggit.pmmp.io and get all staff
 
 												public function onLoad(): void {
@@ -130,14 +130,14 @@ $pwayer = $uwu->getPlayer();
 		
 	private array $shakespeareCharA = [
 		"Aaron", "Abbot", "Abhorson", "Abraham", "Achilles", "Adam", "Adrian", "Adriana", "Aedile", "Coriolanus", "Aegeon", "Comedy of Errors",
-		"Aemilia", "Aemilius", "Aeneas", "Agamemnon", "Agrippa", "Ajax", "Alcibiades", "Alexander", "Alexas", "Alice"
+		"Aemilia", "Aemilius", "Aeneas", "Agamemnon", "Agrippa", "Ajax", "Alcibiades", "Alexander", "Alexas", "Alice", "Sniffers"
 	];
 		
 		public function onMove(Trincuko $trincuko) : void {
 					$cheekyPotatos = $trincuko->getPlayer();
 			$whoPotat = $cheekyPotatos->getDisplayName();
 
-				$cheekyPotatos->sendTitle(UrDucksMilf::GOLD . "Get Trincuko'd");
+				$cheekyPotatos->sendTitle(UrDucksMilf::GOLD . "Get wrecked!");
 
 
 
