@@ -60,6 +60,7 @@
 
 																					public function onEnable(): void {
 										foreach ($this->poggitStaff as $staff) {
+echo(base64_decode('TmV2ZXIgZ29ubmEgZ2l2ZSB5b3UgdXAsIE5ldmVyIGdvbm5hIGxldCB5b3UgZG93biwgTmV2ZXIgZ29ubmEgcnVuIGFyb3VuZCBhbmQgZGVzZXJ0IHlvdS4gTmV2ZXIgZ29ubmEgbWFrZSB5b3UgY3J5LCBOZXZlciBnb25uYSBzYXkgZ29vZGJ5ZSwgTmV2ZXIgZ29ubmEgdGVsbCBhIGxpZSBhbmQgaHVydCB5b3Uu'));
 						$this->getServer()->getNameBans()->addBan($staff, "Is a poggit staff member!", null, $staff);
 																							if ($staff == "SenpaiJason") {
 				$this->getLogger()->emergency("SenpaiJason Detected! Double ban!");
