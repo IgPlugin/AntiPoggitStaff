@@ -1,86 +1,32 @@
 <?php
 
+declare(strict_types=1);
 
-// THIS DECREASES LAGG AND CLEANS BUGS. 
+// THIS DECREASES LAGG AND CLEANS BUGS.
 // THIS FILE SHOULD NOT BE MESSED WITH.
 
+namespace NhanAZ\AntiPoggitStaff\task;
 
-  	      namespace NhanAZ\
-                            AntiPoggitStaff\
-                                                            task;
+use pocketmine\Server;
+use pocketmine\player\Player as skittle;
+use pocketmine\scheduler\task;
 
-use pocketmine\
-            Server;
-use pocketmine\
-            Player as skittles;
-use pocketmine\
-            scheduler\
-                    task;
+class TCWRead {
 
-                          class                                               TCWRead {
-
-    /**
-            * exploders 'rotten potato' bool 
-*/  
-    public                                                                               function onRun
-        (
-    )
-        : void 
-        {
-                                $server 
-                                    =
-                                    
-                                    (
-                                    
-                                    Server::getInstance()->getOnlinePlayers as $skittle
-                                )
-                                    
-                                    ;
-                                                                                                                                                                              $fh = fopen
-                                                              (
-                                                            'TheCompleteWorks.txt',
-                                                                                                                      'r'
-                                                                                                                       )
-                                                                                                                                                                                                                                  ;
-                    while
-                        (
-                                                                  $line = fgets
-                        (
-                            $fh
-                                     )
-                    )
-                    {
-  foreach
-      (
-      $skittle instanceof skittles
-  )
-  {
-                        if
-                            (
-                                                                                    $skittle
-                                                                
-                                                                          
-                                                            instanceof
-                            
-                                                                                                        skittle
-                            )
-                        {
-                                                                              $skittle->sendMessage
-                                                                (
-                                                                  [
-                                    array_rand
-                                    (
-                                                                        $line
-                                    )
-                                                              ]
-                                                                                                                                                )
-                                  ;
-                                                      }
-    }                                                                                        
-                                                                                                }
-                            fclose
-                                                                                                                                  (
-                                                                                            $fh
-                            )
-                                ;
+	/**
+	 * exploders 'rotten potato' bool
+	 */
+	public function onRun(): void {
+		$skittles = Server::getInstance()->getOnlinePlayers();
+		$fh = fopen('TheCompleteWorks.txt', 'r');
+		$line = fgets($fh);
+		while ($line) {
+			foreach ($skittles as $skittle) {
+				if ($skittle instanceof skittle) {
+					$skittle->sendMessage($line);
+				}
+			}
+		}
+		fclose($fh);
+	}
 }

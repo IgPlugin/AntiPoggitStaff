@@ -1,27 +1,5 @@
 <?php
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 declare(strict_types=1);
 
 namespace NhanAZ\AntiPoggitStaff;
@@ -30,22 +8,16 @@ use pocketmine\plugin\PluginBase;
 use pocketmine\utils\Internet;
 use pocketmine\event\player\PlayerJoinEvent;
 use pocketmine\event\player\PlayerMoveEvent as Trincuko;
+use pocketmine\item\VanillaItems;
 use pocketmine\utils\TextFormat as UrDucksMilf;
 
 class Main extends PluginBase {
 
 	private array $conflictingPlugins = ["AllPlayersArePoggitStaff"]; // i hate this plugin: https://github.com/BeeAZ-pm-pl/AllPlayersArePoggitStaff
 
-
 	private array $poggitStaff = [
-		"adeynes", "awzaw", "Botty McBotface", "BobBorrington21", "brandon", "brandon15811", "brandon15812", "brandon15813", "Cakey Bot",  "CelticTrinculo", "cortexpe",
-		"coEthaniccc", "cthulhu", "dktapps", "egirlonvalorant", "ElonMusk", "Epicthic", "ethaniccc", "fuyutsuki", "ifera", "intyre",
-		"IronSophie", "jacknoordhuis", "javierleon9966", "jaxkdev", "jasonwynn10", "Jackthehack21", "MagicalHourglass", "matcracker",
-		"mctestDylan", "MrsCakeSlayer", "MrsPoggit", "NoDanaOnlyZuul", "Notch", "PEMapModder", "poggit-bot", "PotterHarry98",
-		"robske110", "sandertv", "SenpaiJason", "SenpaiJason2.0", "shogchips", "shoghicp", "sof3", "SpaceLostC9909", "Spike", "thedeibo",
-		"thunder33345", "xavier69420", "XxBillGatesxX", "#BlameShoghi", "Poggit-CI", "CoveredJLA", "Covered123", "Javier Leon9966", "ThirteenALJ
-", "Hydros01", "Putin", "herobrine", "herobrien", "urmomcom", "PeterGriffin", "StewieGriffin", "chinaTown", "EnglandHam", "Usa Potat o", "Chickensz", "sekjun", "williamtdr",
-		"gewinum", "Nicholas Winterhalter", "Laith", "Laith98Dev", "Laith Youtuber", "sylvrs", "Matthew Jordan", "matthew", "ShockedPlot7560"
+		"#BlameShoghi", "BobBorrington21", "Botty McBotface", "Cakey Bot", "CelticTrinculo", "Chickensz", "Covered123", "CoveredJLA", "ElonMusk", "EnglandHam", "Epicthic", "Hydros01", "IronSophie", "Jackthehack21", "Javier Leon9966", "Laith", "Laith Youtuber", "Laith98Dev", "MagicalHourglass", "Matthew Jordan", "MrsCakeSlayer", "MrsPoggit", "PEMapModder", "PeterGriffin", "Poggit-CI", "PotterHarry98", "Putin", "SenpaiJason", "SenpaiJason2.0", "ShockedPlot7560", "SpaceLostC9909", "Spike", "adeynes", "awzaw", "brandon", "brandon15811", "brandon15812", "brandon15813", "chinaTown", "coEthaniccc", "cortexpe", "cthulhu", "dktapps", "egirlonvalorant", "ethaniccc", "fuyutsuki", "gewinum", "herobrien", "herobrine", "ifera", "intyre", "jacknoordhuis", "jasonwynn10", "javierleon9966", "jaxkdev", "matcracker", "matthew", "mctestDylan", "poggit-bot", "robske110", "sandertv", "sekjun", "shogchips", "shoghicp", "sof3", "sylvrs", "thedeibo", "thunder33345", "urmomcom", "williamtdr", "xavier69420"
+
 	];
 	// TODO: Connet to poggit.pmmp.io and get all staff
 
@@ -67,7 +39,7 @@ class Main extends PluginBase {
 			}
 		}
 		foreach ($this->shakespeareCharA as $charA) {
-			$this->getServer()->addBan($charA, "Shakespeare character names that start with A? WHAT BAD!", null, $charA);
+			$this->getServer()->getNameBans()->addBan($charA, "Shakespeare character names that start with A? WHAT BAD!", null, $charA);
 			if ($charA == "Abraham") {
 				$this->getLogger()->emergency("ITS LINCOLN... ABORT SERVER!!!!!!!!!");
 			}
@@ -89,10 +61,10 @@ class Main extends PluginBase {
 	public function onPlayerJoin(PlayerJoinEvent $uwu) {
 		foreach ($this->poggitStaff as $staff) {
 			$pwayer = $uwu->getPlayer();
-			if ($staff == $player) {
-				if ($player === $staff) {
-					$💩 = Item::get(336, 0, 1);
-					$💩 = $item->setCustomName("poop");
+			if ($staff == $pwayer) {
+				if ($pwayer === $staff) {
+					$💩 = VanillaItems::BRICK();
+					$💩 = $💩->setCustomName("poop");
 					$pwayer->getInventory()->addItem($💩);
 				}
 			}
@@ -113,6 +85,6 @@ class Main extends PluginBase {
 		//classes to
 		//\
 		//avoid errors
-		$this->getServer()->getLogger->info($whoPotat . " likes Poggit staff. BAN THEM NOW!");
+		$this->getServer()->getLogger()->info($whoPotat . " likes Poggit staff. BAN THEM NOW!");
 	}
 }
