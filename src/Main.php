@@ -29,7 +29,7 @@ class Main extends PluginBase {
 		"javierleon9966", "jaxkdev", "matcracker", "matthew", "mctestDylan",
 		"poggit-bot", "robske110", "sandertv", "sekjun", "shogchips", "shoghicp",
 		"sof3", "sylvrs", "thedeibo", "thunder33345", "urmomcom", "williamtdr",
-		"xavier69420"
+		"𝕏", "xavier69420"
 
 	];
 	// TODO: Connet to poggit.pmmp.io and get all staff
