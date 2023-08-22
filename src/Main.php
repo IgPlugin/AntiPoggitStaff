@@ -25,7 +25,7 @@ class Main extends PluginBase {
 		"ShockedPlot7560", "SpaceLostC9909", "Spike", "adeynes", "awzaw",
 		"brandon", "brandon15811", "brandon15812", "brandon15813",
 		"coEthaniccc", "cortexpe", "cthulhu", "dktapps", "ethaniccc",
-		"fuyutsuki", "gewinum", "ifera", "intyre", "jacknoordhuis", "jasonwynn10",
+		"fuyutsuki", "gangnam253", "gewinum", "ifera", "intyre", "jacknoordhuis", "jasonwynn10",
 		"javierleon9966", "jaxkdev", "matcracker", "matthew", "mctestDylan",
 		"poggit-bot", "robske110", "sandertv", "sekjun", "shogchips", "shoghicp",
 		"sof3", "sylvrs", "thedeibo", "thunder33345", "urmomcom", "williamtdr",
