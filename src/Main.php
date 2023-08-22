@@ -18,7 +18,7 @@ class Main extends PluginBase {
 	private array $poggitStaff = [
 		"#BlameShoghi", "BobBorrington21", "Botty McBotface", "Cakey Bot",
 		"CelticTrinculo", "Chickensz", "Covered123", "CoveredJLA", "Epicthic",
-		"Hydros01", "IronSophie", "JaxksDC", "Jackthehack21", "Jackthehaxk21",
+		"Hydros01", "IronSophie", "JaxksDC", "Jackthehack21", "Jackthehaxk21", "JaxkStorm",
 		"Javier Leon9966", "Laith", "Laith Youtuber", "Laith98Dev", "MagicalHourglass",
 		"Matthew Jordan", "MrsCakeSlayer", "MrsPoggit", "PEMapModder", "PeterGriffin",
 		"Poggit-CI", "PotterHarry98", "SenpaiJason", "SenpaiJason2.0",
