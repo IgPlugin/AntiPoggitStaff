@@ -2,6 +2,5 @@
 name: AntiPoggitStaff
 version: 1.0.0
 main: NhanAZ\AntiPoggitStaff\Main
-api: ["1.4.0", "1.4.1", "1.6.2", "1.7dev-1001", "2.0.0", "3.0.0", "4.0.0", "42069", "5.0.0", "6.0.0", "7.0.0", "8.0.0", "redstone"]
-src-namespace-prefix: NhanAZ\AntiPoggitStaff
+api: ["1.0.0", "2.0.0", "3.0.0", "4.0.0", "5.0.0"]
 ...
