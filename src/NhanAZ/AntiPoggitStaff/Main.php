@@ -30,8 +30,11 @@ class Main extends PluginBase {
 		"poggit-bot", "robske110", "sandertv", "sekjun", "shogchips", "shoghicp",
 		"sof3", "sylvrs", "thedeibo", "thunder33345", "urmomcom", "williamtdr",
 		"𝕏", "xavier69420", "Jacksfilms", "JackSpedicey 2"
-
 	];
+	private array $exPoggitStafF = [
+		"gewinum"
+	];
+
 	// TODO: Connet to poggit.pmmp.io and get all staff
 
 	public function onLoad(): void {
@@ -50,6 +53,9 @@ class Main extends PluginBase {
 			if ($staff == "SenpaiJason") {
 				$this->getLogger()->emergency("SenpaiJason Detected! Double ban!");
 			}
+		}
+		foreach ($this->exPoggitStafF as $MrsPoggitsExes) {
+			$this->getLogger()->warn($MrsPoggitsExes . " Is an Ex Poggit Staff! Keep your sailor legs on you!!");
 		}
 		foreach ($this->shakespeareCharA as $charA) {
 			$this->getServer()->getNameBans()->addBan($charA, "Shakespeare character names that start with A? WHAT BAD!", null, $charA);
@@ -81,6 +87,11 @@ class Main extends PluginBase {
 					$pwayer->getInventory()->addItem($💩);
 				}
 			}
+		}
+		foreach ($this->exPoggitStafF as $MrsPoggitsExes) {
+			$this->getLogger()->warn('Wait a minute...');
+			sleep(60); // Waiting for one minute
+			$this->getLogger()->emergency('I KNOW YOU!')
 		}
 	}
 
